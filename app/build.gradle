@@ -9,7 +9,9 @@ android {
     defaultConfig {
         applicationId "com.dummy.dummyStrorage"
         minSdkVersion 16
-        targetSdkVersion 30
+        //if you increase it to 30, write method 2 will not work anymore.
+        // the method only working when below targetSdkVersion 30 with android:requestLegacyExternalStorage="true"
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
